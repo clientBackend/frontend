@@ -25,7 +25,7 @@
 .img-box{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .image{
@@ -38,6 +38,11 @@
 .image:hover{
     opacity: 0.5;
     transform: scale(1.1);
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 
@@ -55,6 +60,10 @@
         width: 150px;
         height: 150px;
     }
+
+    .title{
+        font-size: 1.3rem;
+    }
 }
 
 @media only screen and (width<=450px) {
@@ -65,5 +74,9 @@
     .image{
         width: 100px;
         height: 100px;
+    }
+
+    .title{
+        font-size: 1.1rem;
     }
 }
