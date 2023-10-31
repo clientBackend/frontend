@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer-box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.image:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
