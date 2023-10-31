@@ -13,13 +13,15 @@
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
-    text-align: center;
 }
 
 .terms{
     font-size: 4rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .p-tag{
@@ -29,6 +31,7 @@
 .form-check-input{
     width: 50px;
     height: 30px;
+    margin-top: 30px;
 }
 
 .form-check-label{
@@ -36,8 +39,85 @@
 }
 
 .button{
+
+    color: white;
+    border: none;
+    background-color: rgb(95, 95, 253);
     margin-top: 30px;
     border-radius: 15px;
     padding: 1rem 2rem;
     font-size: 1.5rem;
+}
+
+@media only screen and (width<=768px) {
+    .text{
+        width: 90%;
+    }
+
+    .terms{
+        font-size: 2.3rem;
+    }
+
+    .p-tag{
+        font-size: 1.1rem;
+    }
+
+    .form-check-input{
+        height: 20px;
+    }
+
+    .form-check-label{
+        font-size: 1.2rem;
+    }
+
+    .button{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (width<=480px) {
+    .terms{
+        font-size: 1.3rem;
+    }
+
+    .p-tag{
+        font-size: 1rem;
+    }
+
+    .form-check-input{
+        height: 15px;
+    }
+
+    .form-check-label{
+        font-size: 1.1rem;
+    }
+
+    .button{
+        padding: 0.7rem 1.1rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (width<=370px) {
+    .terms{
+        font-size: 1.2rem;
+    }
+
+    .p-tag{
+        font-size: 0.9rem;
+    }
+
+    .form-check-input{
+        height: 13px;
+    }
+
+    .form-check-label{
+        font-size: 1rem;
+    }
+
+    .button{
+        padding: 0.7    rem 1.1rem;
+        font-size: 1rem;
+    }
 }
