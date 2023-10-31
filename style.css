@@ -76,7 +76,7 @@
 }
 
 
-@media only screen and (width<=480px) {
+@media only screen and (width<=550px) {
     .terms{
         font-size: 1.3rem;
     }
