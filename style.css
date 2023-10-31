@@ -99,7 +99,7 @@
     }
 }
 
-@media only screen and (width<=370px) {
+@media only screen and (width<=390px) {
     .terms{
         font-size: 1.2rem;
     }
