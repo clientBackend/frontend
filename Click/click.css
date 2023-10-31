@@ -18,9 +18,12 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    font-size: 2rem;
+    font-family: sans-serif;
 }
 
 .image{
+    margin-top: 50px;
     width: 200px;
     height: 200px;
     transition: all 0.3s ease-in-out;
@@ -29,4 +32,28 @@
 .image:hover{
     opacity: 0.5;
     transform: scale(1.1);
+}
+
+
+@media only screen and (width<=700px) {
+    .inner-box{
+        font-size: 1.5rem;
+    }
+
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (width<=450px) {
+    .inner-box{
+        width: 90%;
+        font-size: 1.3rem;
+    }
+
+    .image{
+        width: 100px;
+        height: 100px;
+    }
 }
