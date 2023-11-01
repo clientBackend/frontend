@@ -104,7 +104,7 @@
 @media only screen and (width<=430px) {
     .terms{
         font-size: 1.2rem;
-        margin-top:15%;
+        margin-top:10%;
     }
 
     .p-tag{
@@ -141,6 +141,7 @@
 
     .form-check-label{
         font-size: 0.7rem;
+        margin-right:4%;
     }
 
     .button{
