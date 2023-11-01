@@ -208,6 +208,10 @@
     .confirm-outer{
      font-size: 2rem;
     }
+
+    .lower-box{
+        margin-top:130px;
+    }
 }
 
 @media only screen and (width<=705px) {
@@ -218,10 +222,19 @@
     .button{
         width: 100%;
     }
+
+    .lower-box{
+        margin-top:120px;
+    }
 }
 
 
 @media only screen and (width<=600px) {
+    
+    .lower-box{
+        margin-top:120px;
+    }
+    
     .confirm-outer{
         font-size: 0.8rem;
     }
@@ -285,12 +298,20 @@
         padding: 1.2rem;
     }
 
+    .lower-box{
+        margin-top:90px;
+    }
+
     .input-box{
         font-size: 1rem;
     }
 }
 
 @media only screen and (width<=358px) {
+    .lower-box{
+        margin-top:60px;
+    }
+    
     .multi-coin{ 
         font-size:1.5rem;
     }
