@@ -92,7 +92,7 @@
     }
 
     .form-check-label{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .button{
@@ -104,7 +104,7 @@
 @media only screen and (width<=430px) {
     .terms{
         font-size: 1.2rem;
-        margin-top:20%;
+        margin-top:15%;
     }
 
     .p-tag{
@@ -116,7 +116,7 @@
     }
 
     .form-check-label{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .button{
@@ -140,7 +140,7 @@
     }
 
     .form-check-label{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .button{
