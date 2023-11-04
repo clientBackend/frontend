@@ -30,8 +30,8 @@
 
 .image{
     margin-top: 50px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -42,6 +42,7 @@
 
 .title{
     text-align: center;
+    margin-top: 15px;
     font-size: 1.5rem;
 }
 
