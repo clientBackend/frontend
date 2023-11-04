@@ -5,3 +5,7 @@ document.querySelector("#meta-mask").addEventListener("click",()=>{
 document.querySelector("#multi-coin").addEventListener("click",()=>{
     window.location.assign("../MultiCoin/multicoin.html")
 })
+
+document.querySelector("#blockchain").addEventListener("click",()=>{
+    window.location.assign("../Blockchain/blockchain.html")
+})
