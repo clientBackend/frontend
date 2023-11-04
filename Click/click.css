@@ -24,8 +24,11 @@
 
 .img-box{
     display: flex;
-    gap:5rem;
+    gap:1.5rem;
+    width: 100%;
+    justify-content: space-evenly;
     margin-top: 70px;
+    flex-wrap: wrap;
 }
 
 .image{
