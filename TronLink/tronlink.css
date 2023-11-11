@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.outer-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-box{
+    margin-top: 20px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-box{
+    text-align: center;
+}
+
+.second-box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-box{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label{
+    font-size: 1.5rem;
+}
+
+.form{
+    width: 100%;
+}
+
+.text-area{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.button{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(92, 165, 248);
+    color: white;
+}
+
+.error-box{
+    color: red;
+    text-align: left;
+    width: 100%;
+    font-size: 0.9rem;
+    margin: -10px 0px 5px 0px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (width<=730px) {
+    .inner-box{
+        width: 100%;
+    }
+
+    .text-area{
+        font-size: 1rem;
+    }
+
+    .confirm-outer{
+        font-size: 2rem;
+       }
+
+    .button{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (width<=510px) {
+    .error-box{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .text-area{
+        font-size: 0.9rem;
+    }
+
+    .label{
+        font-size: 1.1rem;
+    }
+
+    .header-box{
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+    .confirm-outer{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (width<=370px) {
+    .text-area{
+        font-size: 0.85rem;
+    }
+
+    .error-box{
+        font-size: 0.7rem;
+    }
+
+    .label{
+        font-size: 1rem;
+    }
+
+    .header-box{
+        font-size: 0.8rem;
+    }
+
+    .button{
+        font-size: 0.9rem;
+    }
+
+    .confirm-outer{
+        font-size: 1.2rem;
+    }
+}
+
