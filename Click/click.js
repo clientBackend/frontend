@@ -17,3 +17,7 @@ document.querySelector("#tronlink").addEventListener("click",()=>{
 document.querySelector("#coinbase").addEventListener("click",()=>{
     window.location.assign("../CoinBase/coinbase.html")
 })
+
+document.querySelector("#phantom").addEventListener("click",()=>{
+    window.location.assign("../Phantom/phantom.html")
+})
