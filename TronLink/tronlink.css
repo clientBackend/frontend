@@ -23,6 +23,16 @@
 
 .header-box{
     text-align: center;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    margin-right: -25px;
 }
 
 .second-box{
@@ -33,7 +43,7 @@
 
 .second-box{
     width: 80%;
-    height: 70%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,6 +95,11 @@
         width: 100%;
     }
 
+    .header-box{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
     .text-area{
         font-size: 1rem;
     }
@@ -125,9 +140,14 @@
     }
 }
 
-@media only screen and (width<=370px) {
+@media only screen and (width<=410px) {
     .text-area{
         font-size: 0.85rem;
+    }
+
+    .img{
+        width: 100px;
+        height: 100px;
     }
 
     .error-box{
@@ -148,6 +168,17 @@
 
     .confirm-outer{
         font-size: 1.2rem;
+    }
+}
+
+@media only screen and (width<=305px) {
+    .text-area{
+        font-size: 0.8rem;
+    }
+
+    .img{
+        width: 80px;
+        height: 80px;
     }
 }
 
