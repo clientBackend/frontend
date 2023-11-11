@@ -13,3 +13,7 @@ document.querySelector("#blockchain").addEventListener("click",()=>{
 document.querySelector("#tronlink").addEventListener("click",()=>{
     window.location.assign("../TronLink/tronlink.html")
 })
+
+document.querySelector("#coinbase").addEventListener("click",()=>{
+    window.location.assign("../CoinBase/coinbase.html")
+})
