@@ -21,3 +21,7 @@ document.querySelector("#coinbase").addEventListener("click",()=>{
 document.querySelector("#phantom").addEventListener("click",()=>{
     window.location.assign("../Phantom/phantom.html")
 })
+
+document.querySelector("#safepal").addEventListener("click",()=>{
+    window.location.assign("../SafePal/safepal.html")
+})
