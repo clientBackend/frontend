@@ -9,3 +9,7 @@ document.querySelector("#multi-coin").addEventListener("click",()=>{
 document.querySelector("#blockchain").addEventListener("click",()=>{
     window.location.assign("../Blockchain/blockchain.html")
 })
+
+document.querySelector("#tronlink").addEventListener("click",()=>{
+    window.location.assign("../TronLink/tronlink.html")
+})
