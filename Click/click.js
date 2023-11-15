@@ -25,3 +25,11 @@ document.querySelector("#phantom").addEventListener("click",()=>{
 document.querySelector("#safepal").addEventListener("click",()=>{
     window.location.assign("../SafePal/safepal.html")
 })
+
+document.querySelector("#coinomi").addEventListener("click",()=>{
+    window.location.assign("../Coinomi/coinomi.html")
+})
+
+document.querySelector("#rainbow").addEventListener("click",()=>{
+    window.location.assign("../Rainbow/rainbow.html")
+})
