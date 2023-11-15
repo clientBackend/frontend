@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coinomi.css">
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <div class="header-box">
+                <h2 class="restore">Restore Wallet</h2>
+                <h4 class="para">Please Confirm your recovery phrase</h4>
+            </div>
+            <div class="middle-box">
+                <input class="input-box" type="text" placeholder="Type here your recovery phrase" disabled>
+                <p class="error-1 display"></p>
+                <div class="keyb">
+                    <div class="row r1">
+                        <div class="fline key">Q</div>
+                        <div class="fline key">W</div>
+                        <div class="fline key">E</div>
+                        <div class="fline key">R</div>
+                        <div class="fline key">T</div>
+                        <div class="fline key">Y</div>
+                        <div class="fline key">U</div>
+                        <div class="fline key">I</div>
+                        <div class="fline key">O</div>
+                        <div class="fline key">P</div>
+                    </div>
+                    <div class="row r2">
+                        <div class="sline key">A</div>
+                        <div class="sline key">S</div>
+                        <div class="sline key">D</div>
+                        <div class="sline key">F</div>
+                        <div class="sline key">G</div>
+                        <div class="sline key">H</div>
+                        <div class="sline key">J</div>
+                        <div class="sline key">K</div>
+                        <div class="sline key">L</div>
+                    </div>
+                    <div class="row r3">
+                        <div class="tline key">Z</div>
+                        <div class="tline no-sel">X</div>
+                        <div class="tline key">C</div>
+                        <div class="tline key">V</div>
+                        <div class="tline key">B</div>
+                        <div class="tline key">N</div>
+                        <div class="tline key">M</div>
+                        <div class="tline key">&lt;-</div>
+                    </div>
+                    <div class="row r4">
+                        <div class="space-bar key"> </div>
+                    </div>
+                </div>
+                <div class="key-name">
+                    <div class="name">QWERTY</div>
+                </div>
+            </div>
+            <div class="lower-box">
+                <input id="checkbox" type="checkbox">
+                <label class="label" for="checkbox">Use A BIP39 passphrase</label>
+                <p class="error-not-open display"></p>
+                <br>
+                <div class="hidden-box display">
+                    <input type="text" placeholder="Type your BIP39 passphrase" class="type-your"></input>
+                    <p class="error-symb display"></p>
+                    <p class="add-on">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cumque rerum ducimus tenetur accusantium molestias facilis officia tempora facere minima!</p>
+                </div>
+            </div>
+            <div class="outer-continue">
+                <div id="submit" class="continue-box"></div>
+            </div>
+        </div>
+    </div>
+    <script src="coinomi.js"></script>
+</body>
+</html>

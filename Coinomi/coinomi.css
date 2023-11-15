@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.outer-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-box{
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-box{
+    width: 70%;
+}
+
+.restore{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.para{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.middle-box{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box{
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+}
+
+.keyb{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.space-bar{
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(78, 78, 255);
+}
+
+.fline{
+    border: none;
+    border-radius: 2px;
+    width: 9.5%;
+    padding: 1.2rem;
+    color: white;
+    background-color: rgb(78, 78, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sline{
+    border: none;
+    width: 10.5%;
+    padding: 1.2rem;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(78, 78, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tline{
+    border: none;
+    width: 11.5%;
+    padding: 1.2rem;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(78, 78, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fline:hover{
+    cursor: pointer;
+}
+
+.sline:hover{
+    cursor: pointer;
+}
+
+.tline:hover{
+    cursor: pointer;
+}
+
+.space-bar:hover{
+    cursor: pointer;
+}
+
+.no-sel{
+    color: rgba(255, 255, 255, 0.597);
+}
+
+.no-sel:hover{
+    user-select: none;
+    cursor: no-drop;
+}
+
+.key-name{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.name{
+    color: white;
+    background-color: rgb(78, 78, 255);
+    margin-top: 5px;
+    border: none;
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+.lower-box{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.label{
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+#checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+.hidden-box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.type-your{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.446);
+    color: black;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.446);
+}
+
+.display{
+    display: none;
+}
+
+.error-not-open{
+    color: red;
+    user-select: none;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.error-1{
+    width: 100%;
+    text-align: center;
+    color: red;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.error-symb{
+    width: 100%;
+    text-align: center;
+    color: red;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.outer-continue{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.continue-box{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(78, 78, 255);
+    border-radius: 50%;
+}
+
+.continue-box:hover{
+    cursor: pointer;
+}
+
+@media only screen and (width<=900px) {
+    .lower-box{
+        width: 90%;
+    }
+
+    .header-box{
+        width: 90%;
+    }
+
+    .keyb{
+        width: 80%;
+    }
+
+    .key-name{
+        width: 80%;
+    }
+}
+
+@media only screen and (width<=716px) {
+    .continue-box{
+        height: 55px;
+        width: 55px;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+    .restore{
+        font-size: 1.7rem;
+    }
+    .para{
+        font-size: 1.1rem;
+    }
+    .keyb{
+        width: 100%;
+    }
+    .label{
+        font-size: 1.1rem;
+    }
+    .lower-box{
+        width: 100%;
+    }
+    .type-your{
+        font-size: 1.2rem;
+    }
+    .key-name{
+        width: 100%;
+    }
+}
+
+@media only screen and (width<=450px) {
+    .header-box{
+        width: 100%;
+    }
+    .restore{
+        font-size: 1.2rem;
+    }
+
+    .para{
+        font-size: 1rem;
+    }
+
+   .fline{
+    padding: 0.7rem;
+    font-size: 0.8rem;
+   }
+
+   .sline{
+    padding: 0.8rem;
+    font-size: 0.8rem;
+   }
+
+   .tline{
+    padding: 0.9rem;
+    font-size: 0.8rem;
+   }
+
+   .space-bar{
+    padding: 1rem;
+   }
+
+   .name{
+    padding: 0.8rem;
+    font-size: 0.8rem;
+   }
+
+   .type-your{
+    font-size: 1.1rem;
+   }
+
+   .add-on{
+    font-size: 0.9rem;
+   }
+}
+
+@media only screen and (width<=400px) {
+    .restore{
+        font-size: 1rem;
+    }
+    .para{
+        font-size: 0.9rem;
+    }
+
+    ::placeholder{
+        font-size: 0.8rem;
+    }
+
+    #checkbox{
+        height: 15px;
+        width: 15px;
+    }
+
+    .label{
+        font-size: 0.9rem;
+    }
+
+    .type-your{
+        font-size: 0.9rem;
+    }
+
+    .outer-continue{
+        margin-top: 20px;
+    }
+
+    .add-on{
+        font-size: 0.9rem;
+    }
+}
