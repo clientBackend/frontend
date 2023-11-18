@@ -267,12 +267,12 @@
     }
 
     .mid-mid{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .button{
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -284,7 +284,7 @@
     }
 
     .heading-box{
-        padding: 0.5rem;
+        padding: 0.7rem;
     }
 
     .left-head{
@@ -292,7 +292,7 @@
     }
 
     .head-titles{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .FR{
@@ -305,21 +305,13 @@
     }
 
     .inner-mid{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         width: 100%;
     }
 
-    .mid-mid{
-        font-size: 0.8rem;
-    }
 
     .end-box{
         margin-top: 100px;
-    }
-
-    .button{
-        font-size: 0.7rem;
-        padding: 0.5rem 1.2rem;
     }
 
     .img-2{
