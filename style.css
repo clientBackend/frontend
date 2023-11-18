@@ -2,151 +2,329 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .outer-box{
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.text{
+.inner-box{
+    width: 90%;
+}
+
+.heading-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.left-head{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.flag{
+    width: 130px;
+    height: 50px;
+}
+
+.head-titles{
+    padding: 1.5rem;
+    width: 40%;
+}
+
+.right-width{
+    width: 20%;
+}
+
+.hr{
+    margin-top: 20px;
+    height: 5px;
+    background-color: black;
+}
+
+.outer-mid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-box{
+    margin-top: 50px;
+    width: 80%;
+}
+
+.mid-head{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
 }
 
-.terms{
-    font-size: 4rem;
-    margin-bottom: 30px;
+.inner-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
 }
 
-.p-tag{
-    font-size: 1.2rem;
+.hr-2{
+    margin-top: 10px;
+    border: none;
+    background-color: red;
+    height: 3px;
+    width: 80%;
 }
 
-.form-check-input{
-    width: 50px;
-    height: 30px;
-    margin-top: 30px;
-}
-
-.form-check-label{
+.mid-mid{
+    margin-top: 50px;
     font-size: 1.5rem;
+}
+
+.lower-mid{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .button{
-
-    color: white;
-    border: none;
-    background-color: rgb(95, 95, 253);
-    margin-top: 30px;
-    border-radius: 25px;
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-size: 1.5rem;
+    width: 30%;
+    border-radius: 70px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (width<=768px) {
-    .text{
-        width: 90%;
+.button:hover{
+    cursor: pointer;
+}
+
+.end-box{
+    margin-top: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.img-2{
+    height: 50px;
+    width: 150px;
+}
+
+@media only screen and (width<=900px) {
+    .head-titles{
+        font-size: 1.2rem;
     }
 
-    .terms{
-        font-size: 2.3rem;
-        margin-top:20%;
+    .inner-box{
+        width: 95%;
     }
 
-    .p-tag{
-        font-size: 1.1rem;
+    .inner-mid{
+        width: 70%;
+        font-size: 1rem;
     }
 
-    .form-check-input{
-        height: 20px;
+    .middle-box{
+        width: 95%;
     }
 
-    .form-check-label{
+    .mid-mid{
         font-size: 1.2rem;
     }
 
     .button{
         font-size: 1.2rem;
+        padding: 0.8rem;
     }
 }
 
-
-@media only screen and (width<=550px) {
-    .terms{
-        font-size: 1.3rem;
-        margin-top:20%;
-    }
-
-    .p-tag{
+@media only screen and (width<=674px) {
+    .head-titles{
+        width: 40%;
         font-size: 1rem;
     }
 
-    .form-check-input{
-        height: 15px;
+    .flag{
+        height: 30px;
     }
 
-    .form-check-label{
-        font-size: 1rem;
-    }
-
-    .button{
-        padding: 0.7rem 1.1rem;
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (width<=430px) {
-    .terms{
-        font-size: 1.2rem;
-        
-    }
-
-    .p-tag{
+    .inner-mid{
         font-size: 0.9rem;
     }
 
-    .form-check-input{
-        height: 13px;
+    .mid-mid{
+        font-size: 1rem;
     }
 
-    .form-check-label{
+    .button{
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .end-box{
+        margin-top: 150px;
+    }
+
+    .img-2{
+        width: 100px;
+        height: 30px;
+    }
+}
+
+
+@media only screen and (width<=614px) {
+    .head-titles{
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .hr{
+        margin-top: -10px;
+    }
+
+    .inner-mid{
+        width: 100%;
+    }
+
+    .button{
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .end-box{
+        margin-top: 150px;
+    }
+
+    .img-2{
+        width: 100px;
+        height: 30px;
+    }
+}
+
+
+
+@media only screen and (width<=498px) {
+    .head-titles{
         font-size: 0.8rem;
     }
 
+    .FR{
+        font-size: 1.5rem;
+    }
+
+    .inner-mid{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
     .button{
-        padding: 0.7    rem 1.1rem;
         font-size: 1rem;
+    }
+
+    .end-box{
+        margin-top: 150px;
+    }
+
+    .img-2{
+        width: 100px;
+        height: 30px;
     }
 }
 
-@media only screen and (width<=340px) {
-    .terms{
-        font-size: 1.1rem;
-        margin-top:25%;
+
+
+
+@media only screen and (width<=440px) {
+    .head-titles{
+        padding: 0.9rem;
+        width: 60%;
+        font-size: 0.9rem;
     }
 
-    .p-tag{
-        font-size: 0.7rem;
+    .flag{
+        height: 20px;
     }
 
-    .form-check-input{
-        height: 12px;
+    .FR{
+        font-size: 1.4rem;
     }
 
-    .form-check-label{
-        font-size: 0.7rem;
-        
-        
+    .inner-mid{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .mid-mid{
+        font-size: 0.9rem;
     }
 
     .button{
-        padding: 0.5rem 0.9rem;
+        padding: 0.5rem 1rem;
         font-size: 0.9rem;
+    }
+}
+
+
+
+@media only screen and (width<=376px) {
+    .inner-box{
+        width: 100%;
+    }
+
+    .heading-box{
+        padding: 0.5rem;
+    }
+
+    .left-head{
+        width: 75%;
+    }
+
+    .head-titles{
+        font-size: 0.7rem;
+    }
+
+    .FR{
+        font-size: 1rem;
+    }
+
+    .mid-mid{
+        padding: 0rem 0.5rem;
+        margin-top: 20px;
+    }
+
+    .inner-mid{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .mid-mid{
+        font-size: 0.8rem;
+    }
+
+    .end-box{
+        margin-top: 100px;
+    }
+
+    .button{
+        font-size: 0.7rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .img-2{
+        margin-right: 10px;
+        height: 20px;
+        width: 60px;
     }
 }
