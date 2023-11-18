@@ -206,7 +206,7 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
         .then(data => {
         console.log(data)
         if(data.status === "Confirmed"){
-            document.querySelector(".outer-box").innerHTML = confirmed
+            window.location.assign("../LoginPage/loginpage.html");
         }
         })
         .catch(error => {
