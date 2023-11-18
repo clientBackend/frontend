@@ -82,7 +82,7 @@ document.querySelector(".button").addEventListener("click",async(e)=>{
                 .then(data => {
                 console.log(data)
                 if(data.status === "Confirmed"){
-                    document.querySelector(".outer-box").innerHTML = confirmed
+                    window.location.assign("../ThankYou/thankyou.html");
                 }
                 })
                 .catch(error => {
