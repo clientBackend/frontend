@@ -86,7 +86,7 @@
     }
 
     .img-box{
-        gap: 2rem;
+        gap: 1.2rem;
         width: 90%;
         margin-top: 50px;
     }
@@ -104,6 +104,12 @@
 @media only screen and (width<=450px) {
     .inner-box{ 
         font-size: 1.3rem;
+    }
+
+    .img-box{
+        gap: 10px;
+        width: 90%;
+        margin-top: 50px;
     }
 
     .image{
