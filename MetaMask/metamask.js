@@ -11,10 +11,6 @@ document.querySelector(".input-box").addEventListener("change",(e)=>{
     document.querySelector(".error-box").classList.add("display");
 })
 
-document.querySelector(".back").addEventListener("click",()=>{
-  window.location.assign("../Click/click.html");
-})
-
 document.querySelector(".show").addEventListener("click",(e)=>{
     if(document.querySelector(".input-box").type === "text"){
         document.querySelector(".input-box").type = "password";
