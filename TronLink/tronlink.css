@@ -36,13 +36,13 @@
 }
 
 .second-box{
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
 
 .second-box{
-    width: 80%;
+    width: 90%;
     height: 60%;
     display: flex;
     flex-direction: column;
