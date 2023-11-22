@@ -138,6 +138,7 @@
     background-color: rgb(92, 165, 248);
     color: white;
     border: none;
+    margin-top: 5%;
 }
 
 .button:hover{
