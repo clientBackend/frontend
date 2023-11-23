@@ -33,6 +33,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     color: rgba(68, 68, 233, 0.712);
+    margin-top : 2%
 }
 
 .text-box{
@@ -41,7 +42,7 @@
     border-radius: 15px;
     font-size: 1.3rem;
     background-color:rgba(0, 0, 0, 0.897);
-    margin-top: 50px;
+    margin-top: 47px;
     color: rgba(255, 255, 255, 0.884);
     padding: 1rem;
 }
