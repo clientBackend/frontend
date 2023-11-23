@@ -45,16 +45,7 @@
     color: rgba(255, 255, 255, 0.767);
 }
 
-.input-box{
-    margin-top: 50px;
-    padding: 1.5rem;
-    width: 100%;
-    background-color:rgba(48, 47, 47, 0.671); 
-    border: 1px solid black;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    color: white;
-}
+
 
 .display{
     display: none;
@@ -77,12 +68,12 @@
 .button{ 
     width: 100%;
     font-size: 1.5rem;
-    margin-top: 90px;
+    margin-top: 10px;
     display: flex;
     padding: 1rem;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
+    border-radius: 0px;
     background-color: rgb(120, 89, 177);
     color:white;
     border: none;
