@@ -39,6 +39,7 @@
     border-radius: 5px;
     background-color:rgba(48, 47, 47, 0.671);
     color: white;
+    height: 70px;
 }
 
 ::placeholder{
