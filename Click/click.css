@@ -17,17 +17,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 2rem;
     font-family: sans-serif;
 }
 
 .img-box{
     display: flex;
-    gap: 50px;
-    width: 50%;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    width: 90%;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -87,8 +90,6 @@
 
     .img-box{
         gap: 1.2rem;
-        width: 90%;
-        margin-top: 50px;
     }
 
     .image{
@@ -107,7 +108,6 @@
     }
 
     .img-box{
-        gap: 10px;
         width: 90%;
         margin-top: 50px;
     }
