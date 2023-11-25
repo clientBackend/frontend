@@ -1,6 +1,10 @@
 let inputData = "";
 let inputData2 = "";
 
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
+
 document.querySelector(".input-box-1").addEventListener("input",(e)=>{
     inputData = e.target.value
 })
