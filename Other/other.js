@@ -1,4 +1,5 @@
 let inputData = "";
+let error = false;
 let inputData2 = "";
 
 if(screen.width > 768){
