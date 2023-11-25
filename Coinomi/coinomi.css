@@ -188,27 +188,21 @@
     display: none;
 }
 
+.error{
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: left;
+    color: red;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
 .error-not-open{
+    font-size: 0.9rem;
     color: red;
     user-select: none;
     margin-top: 5px;
     margin-left: 20px;
-}
-
-.error-1{
-    width: 100%;
-    text-align: center;
-    color: red;
-    user-select: none;
-    margin-bottom: 10px;
-}
-
-.error-symb{
-    width: 100%;
-    text-align: center;
-    color: red;
-    user-select: none;
-    margin-bottom: 10px;
 }
 
 .outer-continue{
@@ -324,9 +318,16 @@
    .add-on{
     font-size: 0.9rem;
    }
+
+   .error{
+    font-size: 0.8rem;
+   }
 }
 
 @media only screen and (width<=400px) {
+    .error{
+        font-size: 0.7rem;
+    }
     .restore{
         font-size: 1rem;
     }
