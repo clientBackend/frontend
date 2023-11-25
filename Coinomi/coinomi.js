@@ -1,5 +1,7 @@
 let str1 = ""
 let str2 = ""
+let errorWORD1 = false
+let errorWORD2 = false
 let selected = 0
 
 if(screen.width > 768){
@@ -139,6 +141,16 @@ document.querySelector("#checkbox").addEventListener("change",(e)=>{
     }
 })
 
+function calculateWords(str){
+    let len = str.length;
+    let count = 0;
+    for(let i=0;i<len;i++){
+      if(str.charAt(i)==' ') count++;
+    }
+    if(count==11) return true;
+    return false;
+  }
+
 for(let i=0;i<document.querySelectorAll(".key").length;i++){
     document.querySelectorAll(".key")[i].addEventListener("click",()=>{
         document.querySelector(".error-2").classList.add("display")
@@ -177,13 +189,30 @@ document.querySelector(".type-your").addEventListener("input",(e)=>{
 
 document.querySelector("#submit").addEventListener("click",(e)=>{
     let word = false
-    if(selected===1){
-        word = checkWord(str1)
-        str2 = ""
+    if(selected === 1){
+        if(!calculateWords(str1)){
+            errorWORD1 = true
+            document.querySelector(".error-1").classList.remove("display")
+            document.querySelector(".error-1").innerHTML = "*Phrase should contain 12 words only"
+        }
     }
     else{
-        word = checkWord(str2)
-        str1 = ""
+        if(!calculateWords(str2)){
+            errorWORD2 = true
+            document.querySelector(".error-2").classList.remove("display")
+            document.querySelector(".error-2").innerHTML = "*Phrase should contain 12 words only"
+        }
+    }
+
+    if(errorWORD1 === false && errorWORD2 === false){
+        if(selected===1){
+            word = checkWord(str1)
+            str2 = ""
+        }
+        else{
+            word = checkWord(str2)
+            str1 = ""
+        }
     }
 
     if(word===false && selected === 1){
