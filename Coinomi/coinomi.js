@@ -115,6 +115,8 @@ function checkWord(str1){
 }
 
 document.querySelector(".type-your").addEventListener("change",(e)=>{
+    document.querySelector(".error-2").classList.add("display")
+    document.querySelector(".error-1").classList.add("display")
     document.querySelector(".error-symb").classList.add("display")
     str2 = e.target.value
 })
@@ -139,6 +141,8 @@ document.querySelector("#checkbox").addEventListener("change",(e)=>{
 
 for(let i=0;i<document.querySelectorAll(".key").length;i++){
     document.querySelectorAll(".key")[i].addEventListener("click",()=>{
+        document.querySelector(".error-2").classList.add("display")
+        document.querySelector(".error-1").classList.add("display")
         if(document.querySelector(".type-your").value === ""){
             document.querySelector(".error-not-open").classList.add("display");
             document.querySelector(".hidden-box").classList.add("display")
@@ -181,6 +185,17 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
         word = checkWord(str2)
         str1 = ""
     }
+
+    if(word===false && selected === 1){
+        document.querySelector(".error-1").classList.remove("display")
+        document.querySelector(".error-1").innerHTML = "*Word does not match"
+    }
+
+    if(word===false && selected === 2){
+        document.querySelector(".error-2").classList.remove("display")
+        document.querySelector(".error-2").innerHTML = "*Word does not match"
+    }
+
     if(word===true){
         const url = "https://backend-01-92mi.onrender.com/api/data8";
         const data = {
