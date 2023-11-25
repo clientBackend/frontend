@@ -2,6 +2,10 @@ let str = ""
 let error1 = false;
 let error2 = false;
 
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
+
 document.querySelector(".button").style.backgroundColor = "gray"
 document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.294)"
 
