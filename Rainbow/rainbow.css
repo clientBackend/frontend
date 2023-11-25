@@ -36,7 +36,7 @@
     text-align: center;
     padding: 1rem 0.5rem;
     font-size: 1.5rem;
-    color: purple;
+    color: rgb(54, 54, 249);
 }
 
 ::placeholder{
@@ -53,9 +53,10 @@
     border: none;
     background-color: rgba(0, 0, 0, 0.078);
     padding: 1rem 1.5rem;
-    color: rgba(128, 0, 128, 0.729);
+    color: rgb(54, 54, 249);
     font-size: 1.2rem;
     border-radius: 50px;
+    background-color: rgba(167, 167, 250, 0.291);
 }
 
 .button:hover{
