@@ -10,6 +10,20 @@ document.querySelector(".text-box").addEventListener("change",(e)=>{
     str = e.target.value;
 })
 
+document.querySelector(".button").style.backgroundColor = "rgb(83, 73, 104)";
+document.querySelector(".button").style.color = "black";
+
+document.querySelector(".text-box").addEventListener("input",(e)=>{
+    if(e.target.value.length === 0){
+        document.querySelector(".button").style.backgroundColor = "rgb(61, 54, 75)";
+        document.querySelector(".button").style.color = "black";
+    }
+    else{
+        document.querySelector(".button").style.backgroundColor = "rgb(120, 89, 177)";
+        document.querySelector(".button").style.color = "white";
+    }
+})
+
 function checkStrLen(str){
     let words = 0;
     for(let i=0;i<str.length;i++){
