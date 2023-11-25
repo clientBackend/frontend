@@ -75,6 +75,7 @@
 }
 
 .error-box{
+    margin-top: -20px;
     color: red;
     text-align: left;
     width: 100%;
@@ -83,6 +84,24 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+}
+
+.button-box{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+    top: -45px;
+    left: 10px;
+}
+
+.button-box-btn{
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    background-color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
 }
 
 .button:hover{
@@ -113,6 +132,9 @@
 }
 
 @media only screen and (width<=510px) {
+    .button-box-btn{
+        font-size: 0.8rem;
+    }
     .error-box{
         width: 90%;
         font-size: 0.8rem;
@@ -140,6 +162,13 @@
 }
 
 @media only screen and (width<=410px) {
+    .button-box{
+        left: 5px;
+    }
+
+    .button-box-btn{
+        font-size: 0.7rem;
+    }
     .text-area{
         font-size: 0.85rem;
     }
