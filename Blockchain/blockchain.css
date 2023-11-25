@@ -45,9 +45,9 @@
 .error-box{
     color: red;
     text-align: left;
-    width: 80%;
+    width: 100%;
     margin-top: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     user-select: none;
 }
 
@@ -133,6 +133,9 @@
 }
 
 @media only screen and (width<=590px) {
+    .error-box{
+        font-size: 0.8rem;
+    }
     .text-box{
         width: 100%;
         font-size: 1.1rem;
@@ -148,6 +151,10 @@
 }
 
 @media only screen and (width<=410px) {
+    .error-box{
+        font-size: 0.7rem;
+    }
+
     .confirm-outer{
         font-size: 1.2rem;
     }
