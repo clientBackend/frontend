@@ -2,6 +2,10 @@ let str = ""
 let error1 = false;
 let error2 = false;
 
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
+
 document.querySelector(".text-area").addEventListener("change",(e)=>{
     str = e.target.value;
 })
