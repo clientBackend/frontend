@@ -1,10 +1,10 @@
 let str = ""
 let error1 = false;
 let error2 = false;
-let confirmed = ` <div class="confirm-outer">
-                    <h2>Confirmed !!</h2>
-                    <h3>Your Secret Phrase Has Been Sent.</h3>
-                  </div>`
+
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
 
 document.querySelector(".text-box").addEventListener("change",(e)=>{
     str = e.target.value;
