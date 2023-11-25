@@ -6,6 +6,10 @@ let imgUrl = ""
 let error = false
 let error2 = false
 
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
+
 document.querySelector("#name").addEventListener("input",(e)=>{
     document.querySelector(".error-name").classList.add("display")
     inputname = e.target.value
