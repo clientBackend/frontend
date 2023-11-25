@@ -44,6 +44,8 @@
     height: 40px;
     font-size: 18px;
     padding-left: 10px;   
+    border: none;
+    border-bottom: 1px solid black;
 }
 
 .upload{
@@ -72,16 +74,24 @@
 }
 
 .button{ 
-    width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    padding: 1.3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
     background-color: transparent;
-    border-radius: 30px;
-    background-color: rgb(120, 89, 177);
-    color:white;
+    border-radius: 40px;
+    background-color: rgb(92, 165, 248);
+    color: white;
     border: none;
+    height: 20%;
+    width: 100%;
 }
 
 .error{
@@ -148,7 +158,7 @@
     }
 
     ::placeholder{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .input-box{
@@ -158,7 +168,6 @@
     .button{
         margin-top: 30px;
         font-size: 1.2rem;
-        width: 60%;
         padding: 1rem;
     }
 }
@@ -189,13 +198,12 @@
     }
 
     ::placeholder{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .button{
         margin-top: 40px;
         font-size: 1rem;
-        width: 40%;
         padding: 0.8rem;
     }
 }
