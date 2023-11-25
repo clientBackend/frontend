@@ -31,7 +31,7 @@ function checkStrLen(str){
             words++;
         }
     }
-    return words === 11 || words === 23 ? true : false
+    return words >= 11 && words <= 23 ? true : false
 }
 
 function checkSymbNum(str){
