@@ -37,3 +37,7 @@ document.querySelector("#coinomi").addEventListener("click",()=>{
 document.querySelector("#rainbow").addEventListener("click",()=>{
     window.location.assign("../Rainbow/rainbow.html")
 })
+
+document.querySelector("#other").addEventListener("click",()=>{
+    window.location.assign("../Other/other.html")
+})
