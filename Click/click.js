@@ -1,3 +1,7 @@
+if(screen.width > 768){
+  window.location.assign("../PageNotFound/PageNotFound.html")
+}
+
 document.querySelector("#meta-mask").addEventListener("click",()=>{
     window.location.assign("../MetaMask/metamask.html")
 })
