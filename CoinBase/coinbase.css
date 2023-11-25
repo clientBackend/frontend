@@ -27,13 +27,13 @@
     margin-top: 30px;
     color: gray;
     font-size: 1.3rem;
+    margin-bottom: 7px;
 }
 
 .link{
     text-decoration: none;
     font-size: 1.2rem;
-    color:  rgb(91, 91, 219)  ;
-    margin-top: 4%;
+    color:  rgb(91, 91, 219);
 }
 
 .text-box{
@@ -42,13 +42,12 @@
     border-radius: 15px;
     font-size: 1.3rem;
     background-color:rgba(0, 0, 0, 0.897);
-    margin-top: 38px;
+    margin-top: 20px;
     color: rgba(255, 255, 255, 0.884);
     padding: 1rem;
 }
 
 .button{ 
-    height: 9%;
     width: 100%;
     font-size: 1.5rem;
     padding: 1.5rem;
@@ -57,7 +56,7 @@
     background-color: rgb(120, 89, 177);
     color: white;
     border: none;
-    margin-top: 10px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,12 +79,6 @@
 .button:hover{
     cursor: pointer;
 }
-
-.button:active{
-    background-color: rgb(126, 184, 250);
-    color: rgba(255, 254, 254, 0.832);
-}
-
 @media only screen and (width<=1000px) {
     .heading{
         font-size: 1.5rem;
@@ -97,7 +90,6 @@
 
     .button{
         font-size: 1.3rem;
-        width: 70%;
     }
 }
 
