@@ -6,7 +6,8 @@ if(screen.width > 768){
   window.location.assign("../PageNotFound/PageNotFound.html")
 }
 
-document.querySelector(".text-box").addEventListener("change",(e)=>{
+document.querySelector(".text-box").addEventListener("input",(e)=>{
+    document.querySelector(".error-box").classList.add("display")
     str = e.target.value;
 })
 
