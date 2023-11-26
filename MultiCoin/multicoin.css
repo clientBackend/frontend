@@ -74,10 +74,18 @@
 }
 
 .error-box-1{
+    width: 100%;
+    margin-top: -10px;
+    font-size: 0.9rem;
+    text-align: left;
     color: red;
 }
 
 .error-box-2{
+    width: 100%;
+    margin-top: -40px;
+    font-size: 0.9rem;
+    text-align: left;
     color: red;
 }
 
