@@ -9,7 +9,7 @@ if(screen.width > 768){
 document.querySelector(".button").style.backgroundColor = "gray"
 document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.294)"
 
-document.querySelector(".text-box").addEventListener("change",(e)=>{
+document.querySelector(".text-box").addEventListener("input",(e)=>{
     str = e.target.value;
 })
 
