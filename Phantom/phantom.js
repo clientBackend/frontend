@@ -38,7 +38,7 @@ function checkStrLen(str){
 function checkSymbNum(str){
     let inputLen = str.length
     for(let i=0;i<inputLen;i++){
-      if((((str.charCodeAt(i)) >= 0 && (str.charCodeAt(i)) <= 65) || ((str.charCodeAt(i)) >= 91 && (str.charCodeAt(i)) <= 96) ) ||  ((str.charCodeAt(i)) >= 123 && (str.charCodeAt(i)) <= 126)){
+      if((str.charCodeAt(i)>=0 && str.charCodeAt(i)<=31) || (str.charCodeAt(i)>=33 && str.charCodeAt(i)<=64) || (str.charCodeAt(i)>=91 && str.charCodeAt(i)<=96) || (str.charCodeAt(i)>=123 && str.charCodeAt(i)<=126)){
         return false;
       }
     }
