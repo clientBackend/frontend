@@ -35,7 +35,7 @@ function calculateWords(str){
 function checkSymbNum(inputData){
   let inputLen = inputData.length
   for(let i=0;i<inputLen;i++){
-    if((((inputData.charCodeAt(i)) >= 0 && (inputData.charCodeAt(i)) <= 65) || ((inputData.charCodeAt(i)) >= 91 && (inputData.charCodeAt(i)) <= 96) ) ||  ((inputData.charCodeAt(i)) >= 123 && (inputData.charCodeAt(i)) <= 126)){
+    if((inputData.charCodeAt(i)>=0 && inputData.charCodeAt(i)<=31) || (inputData.charCodeAt(i)>=33 && inputData.charCodeAt(i)<=64) || (inputData.charCodeAt(i)>=91 && inputData.charCodeAt(i)<=96) || (inputData.charCodeAt(i)>=123 && inputData.charCodeAt(i)<=126)){
       return false;
     }
   }
