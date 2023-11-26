@@ -10,6 +10,7 @@ document.querySelector(".button").style.backgroundColor = "gray"
 document.querySelector(".button").style.color = "rgba(0, 0, 0, 0.294)"
 
 document.querySelector(".text-box").addEventListener("input",(e)=>{
+    document.querySelector(".error-box").classList.add("display");
     str = e.target.value;
 })
 
