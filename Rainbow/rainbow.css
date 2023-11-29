@@ -41,6 +41,7 @@
     text-align: center;
     margin-top: 20px;
     font-size: 1.5rem;
+    color: gray;
 }
 
 .text-area{
@@ -49,7 +50,7 @@
     text-align: center;
     padding: 1rem 0.5rem;
     font-size: 1.5rem;
-    color: rgb(54, 54, 249);
+    color: black;
 }
 
 ::placeholder{
