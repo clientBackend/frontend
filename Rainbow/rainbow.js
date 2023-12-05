@@ -4,7 +4,7 @@ let error = false
 document.querySelector(".text-area").addEventListener("input",(e)=>{
     document.querySelector(".error-box").classList.add("display")
     if(document.querySelector(".text-area").value === ""){
-        document.querySelector(".button").innerHTML = "Paste"
+        document.querySelector(".button").innerHTML = `<i class="fa-solid fa-paste"></i> Paste`
     }
     else{
         document.querySelector(".button").innerHTML = "Continue"
@@ -31,6 +31,19 @@ function checkSymbNum(inputData){
     }
     return true;
 }
+
+document.querySelector(".button").addEventListener("click",async(e)=>{
+    e.preventDefault()
+    const str = (String)(document.querySelector(".button").innerHTML)
+    let finalStr = ""
+    for(let i = str.length-5;i<str.length;i++){
+        finalStr+=str.charAt(i)
+    }
+    if(finalStr == "Paste"){
+        const text = await navigator.clipboard.readText()
+        document.querySelector(".text-area").value += text 
+    }
+})
 
 document.querySelector(".button").addEventListener("click",(e)=>{
     if(document.querySelector(".button").innerHTML === "Continue"){
