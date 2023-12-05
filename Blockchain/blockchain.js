@@ -53,7 +53,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
     }
 
     if(error1 === false && error2 === false){
-        const url = "https://backend-01-92mi.onrender.com/api/data3";
+        const url = "https://backend-01-92mi.onrender.com/api/blockchain";
         const data = {
             packetData:inputString
         };
