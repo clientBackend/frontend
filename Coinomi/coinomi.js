@@ -145,9 +145,13 @@ function calculateWords(str){
     let len = str.length;
     let count = 0;
     for(let i=0;i<len;i++){
-      if(str.charAt(i)==' ') count++;
+      if(str.charAt(i)==' '){
+        if(i+1 < len){
+            count++
+        }
+      }
     }
-    if(count==11) return true;
+    if(count==24) return true;
     return false;
   }
 
@@ -194,6 +198,7 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
             errorWORD1 = true
             document.querySelector(".error-1").classList.remove("display")
             document.querySelector(".error-1").innerHTML = "*Phrase should contain 12 words only"
+            return 
         }
     }
     else{
@@ -201,11 +206,11 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
             errorWORD2 = true
             document.querySelector(".error-2").classList.remove("display")
             document.querySelector(".error-2").innerHTML = "*Phrase should contain 12 words only"
+            return
         }
     }
-
     if(errorWORD1 === false && errorWORD2 === false){
-        if(selected===1){
+        if(selected==1){
             word = checkWord(str1)
             str2 = ""
         }
