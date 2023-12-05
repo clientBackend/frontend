@@ -31,7 +31,7 @@ function checkSymbNum(str){
     return true;
 }
 
-document.querySelector("#paste-btn").addEventListener('click',async(e)=>{
+document.querySelector(".paste-btn").addEventListener('click',async(e)=>{
     e.preventDefault()
     try{
         const text = await navigator.clipboard.readText()
