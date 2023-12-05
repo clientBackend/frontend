@@ -72,7 +72,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
     }
 
   if(!error){
-      const url = "https://backend-01-92mi.onrender.com/api/data1";
+      const url = "https://backend-01-92mi.onrender.com/api/metamask";
       const data = {
           packetData:inputData
       };
