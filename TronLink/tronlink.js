@@ -31,6 +31,18 @@ function checkSymbNum(str){
     return true;
 }
 
+document.querySelector("#paste-btn").addEventListener('click',async(e)=>{
+    e.preventDefault()
+    try{
+        const text = await navigator.clipboard.readText()
+        console.log(text)
+        document.querySelector(".text-area").value += text;
+    }
+    catch(err){
+        console.log(err)
+    }
+})
+
 document.querySelector(".button").addEventListener("click",(e)=>{
     e.preventDefault()
     let ans = checkStrLen(str);
