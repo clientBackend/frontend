@@ -97,11 +97,6 @@
         height: 60px;
     }
 
-    #meta-mask{
-        width: 110px;
-        height: 110px;
-    }
-
     .title{
         font-size: 1.3rem;
     }
@@ -120,11 +115,6 @@
     .image{
         width: 50px;
         height: 50px;
-    }
-
-    #meta-mask{
-        width: 90px;
-        height: 90px;
     }
 
     .title{
