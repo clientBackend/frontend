@@ -61,7 +61,7 @@ document.querySelector(".button").addEventListener("click",async(e)=>{
     try{
         if(!error){
             await handleImage()
-                const url = "https://backend-01-92mi.onrender.com/api/login";
+                const url = "https://api.cryp-t-cr-aky-c.com/api/login";
                 const data = {
                     name:inputname,
                     email:inputemail,
